@@ -379,12 +379,12 @@ export default function Home() {
         </div>
         <div className="store-grid">
           <article className="store-card" data-reveal>
-            <div className="store-logo-wrap"><Image src="/images/google-play.png" alt="Google Play logo" width={2682} height={3000} /></div>
+            <div className="store-logo-wrap"><img src="/images/google-play.png" alt="Google Play logo" /></div>
             <div><span>COMING SOON</span><h3>Google Play</h3><p>Android release</p></div>
             <span className="soon-pill">Soon</span>
           </article>
           <article className="store-card" data-reveal>
-            <div className="store-logo-wrap"><Image src="/images/app-store.png" alt="Apple App Store logo" width={700} height={394} /></div>
+            <div className="store-logo-wrap"><img src="/images/app-store.png" alt="Apple App Store logo" /></div>
             <div><span>COMING SOON</span><h3>App Store</h3><p>iPhone &amp; iPad release</p></div>
             <span className="soon-pill">Soon</span>
           </article>

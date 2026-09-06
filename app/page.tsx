@@ -151,6 +151,14 @@ export default function Home() {
       <div className="cursor-dot" ref={cursorDot} />
       <div className="cursor-halo" ref={cursorHalo} />
 
+      <aside className="development-banner" role="status">
+        <div className="development-banner-inner shell">
+          <span className="development-banner-dot" aria-hidden="true" />
+          <strong>Development preview</strong>
+          <span>This is not the final version. The EasyStream app and website are still under development.</span>
+        </div>
+      </aside>
+
       <nav className="nav shell" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="EasyStream home">
           <span className="brand-mark"><Radio size={18} /></span>

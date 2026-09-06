@@ -33,6 +33,34 @@ img { display: block; max-width: 100%; height: auto; }
 .shell { width: min(1180px, calc(100% - 44px)); margin-inline: auto; }
 .section { padding-block: 128px; }
 
+.development-banner {
+  position: relative;
+  z-index: 60;
+  color: #d9fff0;
+  border-bottom: 1px solid rgba(104, 224, 178, 0.2);
+  background: linear-gradient(90deg, rgba(104, 224, 178, 0.13), rgba(104, 224, 178, 0.06));
+}
+.development-banner-inner {
+  min-height: 44px;
+  padding-block: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+.development-banner-inner strong { color: var(--mint); font-weight: 750; }
+.development-banner-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 0 5px rgba(104, 224, 178, 0.1);
+}
+
 .nav {
   height: 82px;
   display: flex;
@@ -332,6 +360,9 @@ footer { border-top: 1px solid var(--line); }
 
 @media (max-width: 720px) {
   .shell { width: min(100% - 28px, 620px); }
+  .development-banner-inner { min-height: 52px; align-items: flex-start; flex-wrap: wrap; column-gap: 8px; row-gap: 2px; font-size: 12px; }
+  .development-banner-dot { margin-top: 5px; }
+  .development-banner-inner > span:last-child { flex-basis: 100%; }
   .section { padding-block: 90px; }
   .nav { height: 70px; }
   .menu-button { display: block; }
